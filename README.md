@@ -1,45 +1,70 @@
 # Contact Manager
 
-#### Video Demo: https://youtu.be/uEtOb838GlI
-#### Description
-  Contact Manager is a simple application built with Python and PyQt6 that allows users to manage their contacts. It utilizes SQLite for data storage.
+## Video Demo:  https://www.youtube.com/watch?v=uEtOb838GlI
 
-#### Features
-  - Add new contacts with name, phone number, and optional email.
-  - Edit existing contacts.
-  - Delete contacts.
-  - View all contacts in a table view.
+## Description
+Contact Manager is a Python-based application designed to help users manage their contacts. It provides functionalities to add, edit, and delete contact information. The application uses a SQLite database to store contact details and features a graphical user interface (GUI) built with PyQt6.
 
-#### Installation
-  1. Clone the repository:
-  
-  git clone https://github.com/Ltk-Mxz/contact-manager.git
-  cd contact-manager
-  
-  2. Install dependencies:
-  
-  pip install -r requirements.txt
-  
-  3. Run the application:
-  python project.py
+## Features
+- **Add Contacts**: Add new contacts with name, phone number, and email.
+- **Edit Contacts**: Modify existing contact details.
+- **Delete Contacts**: Remove contacts from the database.
+- **Search and Display**: Search contacts and display them in a user-friendly table format.
 
-#### Dependencies
-  - PyQt6: Provides the GUI framework.
-  - SQLite3: Embedded database for storing contacts.
-  - PyTest: For Unit test.
+## Installation
+1. Clone the repository:
 
-#### Usage
-  - Use the "Add Contact" button to add a new contact.
-  - Select a contact from the table to edit or delete it.
+   git clone https://github.com/yourusername/contact-manager.git
+   cd contact-manager
 
-  requirements.txt
-  
-  The requirements.txt file lists Python dependencies required for your project. You can generate it automatically using the following command in your virtual environment where you have installed your dependencies:
-  
-  pip freeze > requirements.txt
-  
-  Make sure your virtual environment is activated before running this command. It will generate a requirements.txt file that looks like this:
+    Create a virtual environment:
 
-  PyQt6==6.7.0
+python3 -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
 
-  Ensure to replace PyQt6==6.7.0 with the specific versions of libraries you are actually using in your project, if necessary.
+Install the required dependencies:
+
+bash
+
+    pip install -r requirements.txt
+
+Usage
+
+    Run the application:
+
+    python project.py
+
+    Use the interface to add, edit, delete, and view contacts.
+
+Testing
+
+The project includes unit tests to ensure the functionality of the contact management features. To run the tests:
+
+pytest
+
+Requirements
+
+    Python 3.8+
+    PyQt6
+    SQLite
+
+Files
+
+    project.py: Main application file containing the GUI and core functionality.
+    database.py: Module for database operations.
+    test_project.py: Unit tests for the application.
+    requirements.txt: List of dependencies.
+
+Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+License
+
+This project is licensed under the MIT License.
+
+### requirements.txt
+
+Make sure this file includes all necessary dependencies for your project:
+
+PyQt6
+pytest
