@@ -253,8 +253,15 @@ class ContactDialog(QDialog):
             }
         """)
 
+def main():
+    try:
+        app = QApplication(sys.argv)
+        manager = ContactManager()
+        manager.show()
+        sys.exit(app.exec())
+    except Exception as e:
+        print(f"An error occurred: {e}", file=sys.stderr)
+        sys.exit(1)
+
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    manager = ContactManager()
-    manager.show()
-    sys.exit(app.exec())
+    main()
