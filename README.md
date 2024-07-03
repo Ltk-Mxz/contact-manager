@@ -1,7 +1,6 @@
 # Contact Manager
 
-#### Video Demo: https://youtu.be/O_UyNfOfXkk
-
+#### Video Demo: https://youtu.be/uEtOb838GlI
 #### Description
   Contact Manager is a simple application built with Python and PyQt6 that allows users to manage their contacts. It utilizes SQLite for data storage.
 
